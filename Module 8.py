@@ -55,3 +55,12 @@ for i in v_list:
     print i
  
 print v_list
+# copy and more
+v_list = [[1],[2],[3]]
+
+for i in v_list:
+    i.append(0)
+    print i
+   
+print v_list
+
