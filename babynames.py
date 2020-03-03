@@ -1,8 +1,6 @@
 """ The babynames.py module takes as input one or more html
     file containing baby name ranking data and defines the
-    extract_names method which extracts the data from the
-    html file and returns a list containing the year
-    followed by the name ranking pairs as a string.
+    extract_names method.
     This data is print to standard output unless the
     --summary file flag is set, indicating the output should
     be print to a summary output file.
