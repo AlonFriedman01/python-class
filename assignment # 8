@@ -1,0 +1,48 @@
+#import library
+import itertools
+import copy
+
+
+#data set
+names = ["David", "Hans", "Joe", "Ruth", "Hannah", "Roy", "Ann", "Lee"]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+letters = ["A", "B", "C", "D", "E", "F", "G", "H"]
+print("This is the dataset being used: ")
+print("names = ", end = '')
+print(names)
+print("numbers = ", end = '')
+print(numbers)
+print("letters = ", end ='')
+print(letters)
+print()
+
+#repeat function
+print("List names repeated 3 times: ")
+for i in itertools.repeat(names, 3):
+    print(i)
+print()
+
+#slice function
+print("This is the numbers list sliced at 5: ")
+for i in itertools.islice(numbers,5):
+    print(i)
+print()
+
+#cycle function
+print("This is names list cycled twice: ")
+count = 0
+for i in itertools.cycle(names):
+    if count > 15:
+        break
+    else:
+        print(i)
+        count += 1
+print()
+
+#chain function
+print("Numbers and letters after the chain function: ")
+for i in itertools.chain(numbers, letters):
+    print(i, end='')
+    print(" ", end='')
+    
+    
