@@ -1,6 +1,6 @@
 #import library
 import itertools
-import copy
+
 
 
 #data set
